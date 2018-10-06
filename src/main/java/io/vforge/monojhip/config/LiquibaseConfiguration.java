@@ -4,6 +4,7 @@ import javax.sql.DataSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
 import org.springframework.cache.CacheManager;
@@ -21,14 +22,11 @@ public class LiquibaseConfiguration {
 
     private final Logger log = LoggerFactory.getLogger(LiquibaseConfiguration.class);
 
-    private final Environment env;
+    @Autowired
+    private Environment env;
 
-    private final CacheManager cacheManager;
-
-    public LiquibaseConfiguration(Environment env, CacheManager cacheManager) {
-        this.env = env;
-        this.cacheManager = cacheManager;
-    }
+    @Autowired
+    private CacheManager cacheManager;
 
     @Bean
     public SpringLiquibase liquibase(@Qualifier("taskExecutor") TaskExecutor taskExecutor,
