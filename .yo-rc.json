@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "vforgemono",
+    "packageName": "io.vforge.monojhip",
+    "packageFolder": "io/vforge/monojhip",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": "kafka",
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "it",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.4.1",
+    "jwtSecretKey": "NTNhZjQ3YmNlM2IyYTNhNTA3ZDFiNDgwNmIyNTVkYTFjNGViNzdmNTg5MGE4MjE0NGIwOTMyZGI2NDAxNGFmNWEzNmFiYjZiYTljYjM5ZWU0MWQ2MjRhMTQ3NzcyNmUyN2MyN2Y5MzkwZTg1MGM2YzY2MzdmMGM0ZTgxY2FmZmQ="
+  },
+  "git-provider": "GitHub",
+  "git-company": "ValerioMC",
+  "repository-name": "vforge-mono-jhip"
+}
